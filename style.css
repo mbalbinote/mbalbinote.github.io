@@ -1,0 +1,176 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside {
+    background-color: #e4e4e4;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+main {
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para Listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Estilos para o DOM.html */
+pre {
+    background-color: #e4e4e4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/*parte de text area */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    display: flex;
+}
+
+.left, .right{
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+textarea{
+    width: 100%;
+    height:40%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+label i{
+    margin-right: 20px;
+    margin-left: 10px;
+    color: #007BFF;
+}
+label{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+    color: #fff;
+}
+.dom-ascii-tree {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    border-left: 4px solid #6c757d;
+}
+
+.dom-ascii-tree pre {
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    color: #495057;
+}
+
+#dom-tree h2 {
+    color: #343a40;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.dom-ascii-tree i {
+    margin-right: 5px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM do Projeto</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Árvore DOM do Projeto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para a Página Inicial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dom-tree">
+            <h2><i class="fas fa-code-branch"></i> Árvore DOM do Projeto</h2>
+            <div class="dom-ascii-tree">
+                <pre>
+        document
+        └── &lt;!DOCTYPE html&gt;
+        └── &lt;html lang="pt-BR"&gt;
+            ├── &lt;head&gt;
+            │   ├── &lt;meta charset="UTF-8"&gt;
+            │   ├── &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            │   ├── &lt;title&gt;Projeto Web&lt;/title&gt;
+            │   ├── &lt;link rel="icon" href="../code-solid.png" type="image/png"&gt;
+            │   ├── &lt;link rel="stylesheet" href="style.css"&gt;
+            │   └── &lt;script src="https://kit.fontawesome.com/8fdd7c58b8.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+            └── &lt;body&gt;
+                ├── &lt;header&gt;
+                │   ├── &lt;h1&gt;Projeto Web&lt;/h1&gt;
+                │   └── &lt;nav&gt;
+                │       └── &lt;ul&gt;
+                │           ├── &lt;li&gt;&lt;a href="#sobre"&gt;Sobre o Projeto&lt;/a&gt;&lt;/li&gt;
+                │           ├── &lt;li&gt;&lt;a href="#objetivos"&gt;Objetivos&lt;/a&gt;&lt;/li&gt;
+                │           ├── &lt;li&gt;&lt;a href="#disciplina"&gt;Disciplina&lt;/a&gt;&lt;/li&gt;
+                │           ├── &lt;li&gt;&lt;a href="#links"&gt;Links do Projeto&lt;/a&gt;&lt;/li&gt;
+                │           └── &lt;li&gt;&lt;a href="DOM.html"&gt;DOM do Projeto&lt;/a&gt;&lt;/li&gt;
+                │
+                ├── &lt;aside&gt;
+                │   ├── &lt;h2&gt;Informações Relevantes&lt;/h2&gt;
+                │   └── &lt;ul&gt;
+                │       ├── &lt;li&gt;&lt;strong&gt;Integrantes:&lt;/strong&gt; Gustavo Ramos e Matheus Balbinote&lt;/li&gt;
+                │       ├── &lt;li&gt;&lt;strong&gt;Curso:&lt;/strong&gt; &lt;a href="[LINK]" target="_blank"&gt;Programação para Web&lt;/a&gt;&lt;/li&gt;
+                │       ├── &lt;li&gt;&lt;strong&gt;Descrição:&lt;/strong&gt; Este projeto visa criar uma página web responsiva e acessível.&lt;/li&gt;
+                │       ├── &lt;li&gt;&lt;strong&gt;Recursos:&lt;/strong&gt; HTML5, CSS3, JavaScript&lt;/li&gt;
+                │       └── &lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="[LINK]" target="_blank"&gt;Repositório&lt;/a&gt;&lt;/li&gt;
+                │
+                ├── &lt;main&gt;
+                │   ├── &lt;section&gt;
+                │   │   └── &lt;div class="container"&gt;
+                │   │       ├── &lt;div class="left"&gt;
+                │   │       │   ├── &lt;label&gt;&lt;i class="fa-brands fa-html5"&gt;&lt;/i&gt; HTML&lt;/label&gt;
+                │   │       │   ├── &lt;textarea id="html-code" onkeyup="run()"&gt;&lt;/textarea&gt;
+                │   │       │   ├── &lt;label&gt;&lt;i class="fa-brands fa-css"&gt;&lt;/i&gt; CSS&lt;/label&gt;
+                │   │       │   └── &lt;textarea id="css-code" onkeyup="run()"&gt;&lt;/textarea&gt;
+                │   │       └── &lt;div class="right"&gt;
+                │   │           ├── &lt;label&gt;&lt;i class="fa-solid fa-play"&gt;&lt;/i&gt; Output&lt;/label&gt;
+                │   │           └── &lt;iframe id="output"&gt;&lt;/iframe&gt;
+                │   │
+                │   ├── &lt;section id="sobre"&gt;
+                │   │   ├── &lt;h2&gt;Sobre o Projeto&lt;/h2&gt;
+                │   │   └── &lt;p&gt;Este projeto foi desenvolvido como parte da disciplina...&lt;/p&gt;
+                │   │
+                │   ├── &lt;section id="objetivos"&gt;
+                │   │   ├── &lt;h2&gt;Objetivos&lt;/h2&gt;
+                │   │   └── &lt;ul&gt;...&lt;/ul&gt;
+                │   │
+                │   ├── &lt;section id="disciplina"&gt;
+                │   │   ├── &lt;h2&gt;Disciplina&lt;/h2&gt;
+                │   │   └── &lt;p&gt;...&lt;/p&gt;
+                │   │
+                │   └── &lt;section id="links"&gt;
+                │       ├── &lt;h2&gt;Links do Projeto&lt;/h2&gt;
+                │       └── &lt;ul&gt;...&lt;/ul&gt;
+                │
+                └── &lt;footer&gt;
+                    └── &lt;address&gt;
+                        ├── &lt;p&gt;Contatos: &lt;a href="mailto:gustavohcramos@gmail.com"&gt;gustavohcramos@gmail.com&lt;/a&gt;...&lt;/p&gt;
+                        ├── &lt;p&gt;&lt;a href="#sobre"&gt;Sobre o Projeto&lt;/a&gt;...&lt;/p&gt;
+                        └── &lt;p&gt;Links Úteis: &lt;a href="[LINK]" target="_blank"&gt;Disciplina: INE5646&lt;/a&gt;&lt;/p&gt;
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Contato: <a href="mailto:gustavohcramos@gmail.com">gustavohcramos@gmail.com</a> e <a
+                    href="mailto:balbinotematheus@gmail.com">balbinotematheus@gmail.com</a> </p>
+            <p>Links Úteis: <a href="https://presencial.moodle.ufsc.br/course/view.php?id=22229&section=0"
+                    target="_blank">Site da Disciplina</a></p>
+        </address>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Web</title>
+    <link rel="icon" href="../code-solid.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8fdd7c58b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Editor de HTML/CSS Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#links">Links do Projeto</a></li>
+                <li><a href="DOM.html">DOM do Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Informações Relevantes</h2>
+        <ul>
+            <li><strong>Integrantes:</strong> Gustavo Ramos e Matheus Balbinote</li>
+            <li><strong>Curso:</strong> <a href="https://presencial.moodle.ufsc.br/course/view.php?id=22229&section=10#tabs-tree-start" target="_blank">Programação para Web</a></li>
+            <li><strong>Descrição:</strong> Editor online de HTML/CSS que permite aos usuários criar, compartilhar e receber feedback sobre seus projetos.</li>
+            <li><strong>Recursos:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/maguila-gus25/UFSC---INE5646" target="_blank">Repositório</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h2>Exemplo</h2>
+        <section>
+            <div class="container">
+                <div class="left">
+                    <label><i class="fa-brands fa-html5"></i> HTML</label>
+                    <textarea id="html-code" onkeyup="run()"></textarea>
+
+                    <label><i class="fa-brands fa-css"></i> CSS</label>
+                    <textarea id="css-code" onkeyup="run()"></textarea>
+                </div>
+                <div class="right">
+                    <label><i class="fa-solid fa-play"></i> Output</label>
+                    <iframe id="output"></iframe>
+                </div>
+            </div>
+        </section>
+        <script>
+            function run(){
+                let htmlCode = document.getElementById("html-code").value;
+                let cssCode = document.getElementById("css-code").value;
+                let output = document.getElementById("output");
+                
+                output.contentDocument.body.innerHTML = htmlCode +"<style>"+cssCode+"</style>";
+
+            }
+        </script> 
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto consiste em um editor online de HTML/CSS, onde os usuários podem criar e editar seus códigos diretamente na plataforma. Além disso, os projetos podem ser salvos online e os usuários podem compartilhar seus códigos com outros, recebendo feedbacks e sugestões para melhoria.</p>
+        </section>
+
+        <section id="objetivos">
+            <h2>Objetivos</h2>
+            <ul>
+                <li>Permitir que usuários editem seus projetos HTML/CSS de forma prática e rápida.</li>
+                <li>Oferecer a possibilidade de compartilhar os códigos e receber feedback da comunidade.</li>
+                <li>Proporcionar o salvamento dos projetos online para edições futuras.</li>
+                <li>Exibir o código do projeto, com a necessidade de atualização manual da página para refletir as alterações.</li>
+            </ul>
+        </section>
+
+        <section id="funcionalidades">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li><strong>Editor de HTML/CSS Online:</strong> Interface para criação e edição de código HTML e CSS.</li>
+                <li><strong>Compartilhamento e Feedback:</strong> Usuários podem compartilhar seus projetos e receber feedbacks de outros usuários.</li>
+                <li><strong>Salvamento Online:</strong> Projetos podem ser salvos e acessados posteriormente.</li>
+                <li><strong>Exibição do Código com Atualização Manual:</strong> O código é exibido na plataforma, mas qualquer alteração precisa de atualização manual da página para ser vista.</li>
+            </ul>
+        </section>
+
+        <section id="links">
+            <h2>Links do Projeto</h2>
+            <ul>
+                <li><a href="https://github.com/maguila-gus25/UFSC---INE5646" target="_blank">Repositório no GitHub</a></li>
+                <li><a href="DOM.html">Árvore DOM do Projeto</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Contato: <a href="mailto:gustavohcramos@gmail.com">gustavohcramos@gmail.com</a> e <a href="mailto:balbinotematheus@gmail.com">balbinotematheus@gmail.com</a> </p>
+            <p> <a href="#sobre">Sobre o Projeto</a> • <a href="#objetivos">Objetivos</a> • <a href="#disciplina">Disciplina</a> • <a href="#links">Links do Projeto</a></p>
+            <p>Links Úteis: <a href="https://presencial.moodle.ufsc.br/course/view.php?id=22229&section=10#tabs-tree-start" target="_blank">Disciplina: INE5646</a></p>
+        </address>
+    </footer>
+</body>
+</html>
